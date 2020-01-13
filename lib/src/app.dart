@@ -6,11 +6,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: _home(),
+      home: WebPage(),
     );
-  }
-
-  Widget _home() {
-    return WebPage();
   }
 }

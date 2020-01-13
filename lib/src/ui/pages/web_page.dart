@@ -44,7 +44,6 @@ class _WebPageState extends State<WebPage> {
   /// Handles the navigation to external links
   FutureOr<NavigationDecision> _navigationDelegate(
       NavigationRequest navigationRequest) async {
-        print(navigationRequest.url);
     if (!navigationRequest.url.startsWith(_initialUrl)) {
       if (await canLaunch(navigationRequest.url)) {
         launch(navigationRequest.url);
